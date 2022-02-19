@@ -21,7 +21,9 @@ function DisplayAllEventsPage() {
   }, [events]);
 
   async function getAllEvents() {
-    let res = await fetch("http://localhost:5500/api/v1/events/");
+    let res = await fetch(
+      "https://clanoptimistapi.herokuapp.com/api/v1/events/"
+    );
     let response = await res.json();
 
     setEvents(response.payload.rows);
@@ -46,7 +48,10 @@ function DisplayAllEventsPage() {
 
                 <span className="span-span">
                   <DeleteDataButton eventid={event.id} />
-                  <FormEditDescription event_id={event.id} event_description={event.event_description}/>
+                  <FormEditDescription
+                    event_id={event.id}
+                    event_description={event.event_description}
+                  />
                 </span>
               </div>
             );

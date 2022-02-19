@@ -38,7 +38,7 @@ export default function HostEventForm() {
       event_category: e.target[5].value,
     };
 
-    fetch("http://localhost:5500/api/v1/events/host-event", {
+    fetch("https://clanoptimistapi.herokuapp.com/api/v1/events/host-event", {
       method: "POST",
       body: JSON.stringify(newEvent),
       headers: {

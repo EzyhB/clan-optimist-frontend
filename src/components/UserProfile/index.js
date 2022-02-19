@@ -9,7 +9,7 @@ export default function UserProfile({ name }) {
 
   async function fetchProfile(name) {
     let data = await fetch(
-      "http://localhost:5500/api/v1/events/profile/" + name
+      "https://clanoptimistapi.herokuapp.com/api/v1/events/profile/" + name
     );
     let res = await data.json();
     setProfile(res);

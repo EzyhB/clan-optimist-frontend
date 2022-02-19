@@ -14,7 +14,7 @@ export default function MainContent() {
       <h5>please view the website in mobile view 482x842px</h5>
       <div id="upcoming-event">
         <Link to="all-events">
-          <DisplayUpcomingEvents count="1" />
+          <DisplayUpcomingEvents  />
         </Link>
       </div>
 

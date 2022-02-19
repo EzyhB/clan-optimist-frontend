@@ -1,5 +1,5 @@
 function updateDescription(id, description) {
-  fetch("http://localhost:5500/api/v1/events/" + id, {
+  fetch("https://clanoptimistapi.herokuapp.com/api/v1/events/" + id, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

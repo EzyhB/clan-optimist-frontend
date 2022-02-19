@@ -10,7 +10,7 @@ function DisplayUpcomingEvents() {
 
   async function getUpcomingEvents() {
     let res = await fetch(
-      "http://localhost:5500/api/v1/events/upcomingevents/1"
+      "https://clanoptimistapi.herokuapp.com/api/v1/events/upcomingevents/1"
     );
     let response = await res.json();
 

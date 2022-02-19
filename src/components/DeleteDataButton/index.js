@@ -3,9 +3,12 @@ import "./deleteDataButton.css";
 
 export default function DeleteDataButton({ eventid }) {
   async function handleOnClick(e) {
-    await fetch("http://localhost:5500/api/v1/events/" + e.target.value, {
-      method: "DELETE",
-    });
+    await fetch(
+      "https://clanoptimistapi.herokuapp.com/api/v1/events/" + e.target.value,
+      {
+        method: "DELETE",
+      }
+    );
     console.log("delete req passed");
   }
 
