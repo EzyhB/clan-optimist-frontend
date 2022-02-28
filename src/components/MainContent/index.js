@@ -6,7 +6,6 @@ import DisplayUpcomingEvents from "../DisplayUpcomingEvents";
 
 import "./mainContent.css";
 import { Link } from "react-router-dom";
-import { Container } from "@mui/material";
 
 export default function MainContent() {
   return (
