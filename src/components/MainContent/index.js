@@ -6,6 +6,7 @@ import DisplayUpcomingEvents from "../DisplayUpcomingEvents";
 
 import "./mainContent.css";
 import { Link } from "react-router-dom";
+import { Container } from "@mui/material";
 
 export default function MainContent() {
   return (
@@ -14,7 +15,7 @@ export default function MainContent() {
       <h5>please view the website in mobile view 482x842px</h5>
       <div id="upcoming-event">
         <Link to="all-events">
-          <DisplayUpcomingEvents  />
+          <DisplayUpcomingEvents />
         </Link>
       </div>
 

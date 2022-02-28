@@ -6,6 +6,7 @@
 .main-display {
   text-align: center;
   align-items: center;
+  /* width: 482px; */
 }
 
 .main-display h1 {
@@ -24,5 +25,5 @@
 }
 
 #upcoming-event {
-  margin-left: 60px;
+  margin-right: 50px;
 }

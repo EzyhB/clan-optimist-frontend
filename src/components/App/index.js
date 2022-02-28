@@ -4,15 +4,20 @@ import HostEventPage from "../HostEventPage";
 import HomePage from "../HomePage";
 import DisplayAllEventsPage from "../DisplayAllEventsPage";
 import ProfilePage from "../ProfilePage";
+import { Container } from "@mui/material";
 function App() {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/host-event" element={<HostEventPage />} />
-        <Route path="/all-events" element={<DisplayAllEventsPage />} />
-        <Route path="/profile" element={<ProfilePage />} />
-      </Routes>
+      <Container
+        sx={{ width: "482px", display: "flex", justifyContent: "center" }}
+      >
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/host-event" element={<HostEventPage />} />
+          <Route path="/all-events" element={<DisplayAllEventsPage />} />
+          <Route path="/profile" element={<ProfilePage />} />
+        </Routes>
+      </Container>
     </>
   );
 }
